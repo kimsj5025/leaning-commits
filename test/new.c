@@ -2,25 +2,25 @@
 #include <windows.h>
 
 
-int i = 10, n, i2;
+float i = 0, n, i2, i3;
 
 
 int main() {
 
 	start();
 	
-	if (MessageBox(NULL, TEXT("Are you run progrme?"), TEXT("Are you sure?"), MB_YESNO) == 7) { 
+	/*if (MessageBox(NULL, TEXT("Are you run progrme?"), TEXT("Are you sure?"), MB_YESNO) == 7) { 
 		return; 
+	};*/
+	printf("입력할 정수의 수 : ");
+	scanf("%f", &n);
+	while (i < n) {
+
+		scanf("%f", &i2);
+		i3 += i2;
+		i++;
 	};
-
-	scanf("%d", &n);
-	while (i > 1) {
-
-
-		printf("%d * %d = %d\n", n, i - 1, n * (i - 1));
-		i--;
-	};
-
+	printf("%0.2f", i3 / n);
 
 }
 
