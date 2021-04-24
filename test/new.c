@@ -2,7 +2,7 @@
 #include <windows.h>
 
 
-int i = 0, n, i2;
+int i = 10, n, i2;
 
 
 int main() {
@@ -13,28 +13,19 @@ int main() {
 		return;
 	};
 
-	while (1) {
+	scanf("%d", &n);
+	do{
 
-		system("cls");
 
-		i = 1, n = 1, i2 = 0;
+		printf("%d * %d = %d\n", n, i - 1, n * (i - 1));
+		i--;
+	}	while (i > 1);
 
-		do{
-
-			if (n == 0) break;
-			scanf("%d", &n);
-			i2 = i2 + n;
-			i++;
-			system("cls");
-		} while (1);
-		printf("%d\n", i2);
-		system("pause");
-	};
 
 }
 
 
 int start() {
-	system("title 0을 입력할 때까지 정수받아 더해 출력하기");
-	system("mode con:cols=30 lines=20");
+	system("title 구구단 반대로 출력하기");
+	//system("mode con:cols=20 lines=20");
 }
