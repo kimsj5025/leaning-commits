@@ -1,25 +1,17 @@
 #include <stdio.h>
 #include <windows.h>
 int main() {
+	system("title 구구단 계산기");
 
-	float mid, end, trash,var;
 
-	printf("** 과목별 점수 계산 프로그램 **\n\n");
+	int i = 0, eks;
+	scanf("%d", &eks);
+	while (i < 99) {
+		
 
-	printf("\n중간고사 반영비율/받은점수 : ");
-	scanf("%f %f", &var, &mid);
-	mid = mid * var;
-
-	printf("\n기말고사 반영비율/받은점수 : ");
-	scanf("%f %f", &var, &end);
-	end = end * var;
-
-	printf("\n수행평가 반영비율/받은점수 : ");
-	scanf("%f %f", &var, &trash);
-	trash = trash * var;
-
-	printf("\n총 점수 : %0.1f\n\n\n", end + trash + mid);
-
+		printf("%d * %d = %d\n", eks, i + 1, eks * (1 + i));
+		i++;
+	};
 	system("pause");
 
 }
