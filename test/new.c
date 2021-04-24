@@ -9,7 +9,7 @@ int main() {
 
 	start();
 
-	if (MessageBox(NULL, TEXT("Are you run progrme?"), TEXT("Are you sure?"), MB_YESNO) == 7) {
+	if (MessageBox(NULL, TEXT("Are you run progrem?"), TEXT("Are you sure?"), MB_YESNO) == 7) {
 		return;
 	};
 
@@ -27,15 +27,14 @@ int main() {
 			i++;
 			system("cls");
 		} while (1);
-		printf("%d", i2);
+		printf("%d\n", i2);
 		system("pause");
 	};
-
 
 }
 
 
 int start() {
 	system("title 0을 입력할 때까지 정수받아 더해 출력하기");
-	//system("mode con:cols=30 lines=20");
+	system("mode con:cols=30 lines=20");
 }
