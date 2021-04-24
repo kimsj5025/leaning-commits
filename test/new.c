@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <windows.h>
+
+
+int i = 0, n, i2;
+
+
 int main() {
 
 	start();
@@ -8,19 +13,23 @@ int main() {
 		return; 
 	};
 
-
-	int i = 0, eks, i2;
 	while (1) {
-		system("cls");
-		i = 1, eks = 0, i2 = 0;
-		printf("정수를 입력하세요 : ");
-		scanf("%d", &eks);
-		while (i <= eks) {
 
-			i2 = i2 + i;
+		system("cls");
+
+		i = 1, n = 0, i2 = 0;
+
+		scanf("%d", &n);
+
+		system("cls");
+
+		while (i <= n) {
+
+			i2 = 3 * i;
+			printf("%d\n",i2);
 			i++;
+
 		};
-		printf("입력된 수 까지의 합 : %d\n\n", i2);
 		system("pause");
 	};
 
@@ -29,6 +38,6 @@ int main() {
 
 
 int start() {
-	system("title 입력된 수 까지의 합 구하기");
-	system("mode con:cols=35 lines=20");
+	system("title 3위 배수 n번 출력하기");
+	//system("mode con:cols=30 lines=20");
 }
