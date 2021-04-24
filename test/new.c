@@ -9,20 +9,20 @@ int main() {
 
 	start();
 	
-	/*if (MessageBox(NULL, TEXT("Are you run progrme?"), TEXT("Are you sure?"), MB_YESNO) == 7) { 
+	if (MessageBox(NULL, TEXT("Are you run progrem ?"), TEXT("Are you sure?"), MB_YESNO) == 7) { 
 		return; 
-	};*/
-	printf("입력할 정수의 수 : ");
-	scanf("%f", &n);
-	while (i < n) {
-
-		scanf("%f", &i2);
-		i3 += i2;
-		i++;
 	};
-	printf("%0.2f", i3 / n);
 
-}
+	
+	printf("1이상의 수 입력  : ");
+	scanf("%f", &n);
+	do {
+		printf("hello world\n");
+		i++;
+	} while (i <= n);
+	system("pause");
+
+}  
 
 
 int start() {
