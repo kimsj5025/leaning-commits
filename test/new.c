@@ -25,9 +25,9 @@ int main() {
 			scanf("%d", &n);
 			i2 = i2 + n;
 			i++;
-
+			system("cls");
 		};
-		printf("%d", i2);
+		printf("%d\n", i2);
 		system("pause");
 	};
 
@@ -36,6 +36,6 @@ int main() {
 
 
 int start() {
-	system("0을 입력할 때까지 정수받아 더해 출력하기");
-	//system("mode con:cols=30 lines=20");
+	system("title 0을 입력할 때까지 정수받아 더해 출력하기");
+	system("mode con:cols=20 lines=20");
 }
