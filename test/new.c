@@ -17,19 +17,17 @@ int main() {
 
 		system("cls");
 
-		i = 1, n = 0, i2 = 0;
+		i = 1, n = 1, i2 = 0;
 
-		scanf("%d", &n);
+		while (1) {
 
-		system("cls");
-
-		while (i <= n) {
-
-			i2 = 3 * i;
-			printf("%d\n",i2);
+			if (n == 0) break;
+			scanf("%d", &n);
+			i2 = i2 + n;
 			i++;
 
 		};
+		printf("%d", i2);
 		system("pause");
 	};
 
@@ -38,6 +36,6 @@ int main() {
 
 
 int start() {
-	system("title 3위 배수 n번 출력하기");
+	system("0을 입력할 때까지 정수받아 더해 출력하기");
 	//system("mode con:cols=30 lines=20");
 }
