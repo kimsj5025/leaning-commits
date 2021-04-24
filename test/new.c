@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <windows.h>
 int main() {
-	int a, b;
-	scanf("%d %d", &a, &b);
-	printf("%d %d %d ", a&b,a|b,a^b);
+	int s;
+	float x = 1.3, y = 1.8;
+	s = x + y;
+	printf("%d\n", s);
+	s = (int)x + (int)y;
+	printf("%d\n", s);
 }
