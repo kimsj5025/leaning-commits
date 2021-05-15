@@ -5,16 +5,17 @@
 int a, b, c;
 int main() {
 
-	scanf("%d %d", &a,&b);
-	if (a < b) {
-		printf("%d\n", b - a);
+	scanf("%d", &a);
+	if (a%2==1)
+	{
+		printf("add");
 	}
 	else {
-		printf("%d\n", a - b);
+		printf("even");
 	}
 
 
-	printf("종료\n");
+	printf("\n종료\n");
 
 	system("pause");
 }
