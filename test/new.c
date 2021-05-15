@@ -5,13 +5,13 @@
 int a, b, c;
 int main() {
 
-	scanf("%d", &a);
-	if (a%2==1)
+	scanf("%d %d %d", &a,&b,&c);
+	if ((a-b+c)%10 == 0)
 	{
-		printf("add");
+		printf("¤§¤²");
 	}
 	else {
-		printf("even");
+		printf("¤¡¤©¤¸¤©");
 	}
 
 
