@@ -1,59 +1,22 @@
 #include <stdio.h>
 #include <windows.h>
-
-
-int i, n, i2, i3, a, b, c;
-
-
 int main() {
-	
-	scanf_s("%d", &a);
+	system("title 구구단 계산기");
 
-	for (i = 0; i <= a; i++) {
 
-		for (i2 = 0; i2 + i < a; i2++)
-		{
-			printf(" ");
-		}
+	int i = 0, eks=1, i2=0;
 
-		for (i2 = 0; i2 <= i; i2++)
-		{
-			printf("*");
-		}
-
-		for (i3 = 0; i3 < i; i3++)
-		{
-			printf("*");
-		}
-		//i =5
-
+	while (i2 < 8) {
+		eks++;
+		i2++;
+		i = 0;
+		while (i < 9) {
+			printf("%d * %d = %d\n", eks, i + 1, eks * (1 + i));
+			i++;
+		};
 		printf("\n");
-}
 
-	for (i = 0; i <= a; i++) {
-
-		for (i2 = -1; i2 < i; i2++)
-		{
-			printf(" ");
-		}
-
-		for (i2 = a-1; i2 >= i; i2--)
-		{
-			printf("*");
-		}
-
-		for (i3 = a-1; i3 > i; i3--)
-		{
-			printf("*");
-		}
-		//i =5
-
-		printf("\n");
-	}
-
-
+	};
 	system("pause");
-	
-
 
 }
