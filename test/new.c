@@ -5,13 +5,13 @@
 int a, b, c;
 int main() {
 
-	scanf("%d %d %d", &a,&b,&c);
-	if ((a-b+c)%10 == 0)
+	scanf_s("%d", &a);
+	if (a<10)
 	{
-		printf("¤§¤²");
+		printf("ÀÛ");
 	}
 	else {
-		printf("¤¡¤©¤¸¤©");
+		printf("Å­");
 	}
 
 
