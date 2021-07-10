@@ -1,21 +1,17 @@
 #include <stdio.h>
 #include <windows.h>
 
-
-int a, b, c;
 int main() {
 
-	scanf_s("%d %d %d", &a,&b,&c);
-	if (c < a+b)
-	{
-		printf("¤·¤·");
-	}
-	else {
-		printf("¤¤¤¤");
-	}
-
-
-	printf("\nÁ¾·á\n");
-
+	printf("%d", f(5));
 	system("pause");
+	return 0;
+
+}
+
+int f(int n) {
+
+	if (n == 1) return 1;
+	return n * f(n - 1);
+
 }
