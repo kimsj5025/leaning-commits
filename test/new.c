@@ -2,21 +2,22 @@
 #include <windows.h>
 
 int main() {
-	
-	int a[3][9];
-
-	for ( int i = 0; i <3; i++)
+	int n, i3 = 0;
+	int a[100][100] ;
+	scanf_s("%d",&n);
+	for ( int i = 0; i <n; i++)
 	{
-		for  (int i2 = 0; i2 <9; i2++)
+		for  (int i2 = 0; i2 <n; i2++)
 		{
-			a[i][i2] = (i + 5) * (i2+1);
+			i3++;
+			a[i][i2] = i3;
 		}
 		printf("\n");
 	}
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < n; i++)
 	{
-		for (int i2 = 0; i2 < 9; i2++)
+		for (int i2 = 0; i2 < n; i2++)
 		{
 			printf("%d ", a[i][i2]);
 		}
