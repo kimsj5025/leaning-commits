@@ -3,15 +3,21 @@
 
 int main() {
 
-	printf("%d", f(5));
+	int a=1, b=2;
+	switchNum(&a,&b);
+
+	printf("%d %d\n", a, b);
+
 	system("pause");
+
 	return 0;
 
 }
 
-int f(int n) {
-
-	if (n == 1) return 1;
-	return n * f(n - 1);
-
+int switchNum(int *a,int *b) {
+	int i;
+	i = *a;
+	*a = *b;
+	*b = i;
+	
 }
